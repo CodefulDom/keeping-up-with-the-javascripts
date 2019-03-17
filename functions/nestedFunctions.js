@@ -22,4 +22,14 @@ function addAndMultiply(num1, num2) {
 
 console.log(addAndMultiply(3, 3))
 
-console.log(3 + 3 + 3 * 3)
+function personFormatter(firstName, lastName, age) {
+  function formatName(arg1, arg2, arg3) {
+    return (
+      ' First Name: ' + arg1 + ' \n Last Name: ' + arg2 + ' \n Age: ' + arg3
+    )
+  }
+  const formattedName = formatName(firstName, lastName, age)
+  return formattedName
+}
+
+console.log(personFormatter('Becky', 'Hallan', 38))
