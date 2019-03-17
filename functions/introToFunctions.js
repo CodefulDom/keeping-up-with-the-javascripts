@@ -10,9 +10,23 @@ const add = (a, b) => a + b
 const sum = add(1, 7)
 console.log(sum)
 
-const squared = (num) => {
+const myName = 'Dominique'
+
+const sayHi = function(myName) {
+  if (!myName) {
+    var myName = 'Bob'
+  }
+  console.log(`Hi, ${myName}`)
+}
+
+const resultsBasedLearning = sayHi('Israel')
+
+const squareNumber = function(num) {
   return num * num
 }
 
-const squareRoot = squared(6)
-console.log(typeof squareRoot)
+const numberAdder = function(num1, num2) {
+  return num1 + num2
+}
+
+console.log(numberAdder(squareNumber(2), 1))
