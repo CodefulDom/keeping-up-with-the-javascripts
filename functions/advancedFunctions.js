@@ -48,3 +48,21 @@ const filteredNumbers = numbers.filter((num) => {
 })
 
 console.log(filteredNumbers)
+
+//TODO: Check foreach and figure out what it is actually doing. Example was kinda silly
+const doubledNumbers = (num) => {
+  const numberContainer = []
+  num.forEach((n) => {
+    const doubled = n * 2
+    numberContainer.push(doubled)
+  })
+  return numberContainer
+}
+
+console.log(doubledNumbers(numbers))
+
+const numberMultiplier = (x, y = 2) => {
+  return x * y
+}
+
+console.log(numberMultiplier(5, 10))
