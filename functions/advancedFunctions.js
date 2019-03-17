@@ -26,7 +26,7 @@ const users = [
 ]
 
 function mapUserNames(myArr) {
-  return myArr.map(function(user) {
+  return myArr.map((user) => {
     return user.name
   })
 }
