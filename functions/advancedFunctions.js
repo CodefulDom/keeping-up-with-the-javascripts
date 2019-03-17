@@ -25,10 +25,11 @@ const users = [
   }
 ]
 
+function mapUserNames(myArr) {
+  return myArr.map(function(user) {
+    return user.name
+  })
+}
+
 console.log(users)
-
-const userNameList = users.map((user) => {
-  return user.name
-})
-
-console.log(userNameList)
+console.log(mapUserNames(users))
