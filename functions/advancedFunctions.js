@@ -31,5 +31,7 @@ const mapUserNames = (myArr) => {
   })
 }
 
-console.log(users)
-console.log(mapUserNames(users))
+// syntax
+
+const multiplier = (x, y) => x * y
+console.log(multiplier(2, 2))
