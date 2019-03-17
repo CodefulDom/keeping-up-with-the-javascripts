@@ -31,6 +31,8 @@ const mapUserNames = (myArr) => {
   })
 }
 
+console.log(mapUserNames(users))
+
 // syntax shorten: if you function has one statement, use one line!
 
 const multiplier = (x, y) => x * y
