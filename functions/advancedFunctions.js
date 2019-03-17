@@ -31,7 +31,10 @@ const mapUserNames = (myArr) => {
   })
 }
 
-// syntax
+// syntax shorten: if you function has one statement, use one line!
 
 const multiplier = (x, y) => x * y
 console.log(multiplier(2, 2))
+
+const squared = (num) => num * num
+console.log(squared(2))
