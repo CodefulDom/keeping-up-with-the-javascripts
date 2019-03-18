@@ -107,7 +107,8 @@ console.log(purchaseItem(101))
 console.log(bankAccount)
 
 function logAllArguments(x, y, z) {
-  return arguments
+  const args = Array.prototype.slice.call(arguments, logAllArguments.length)
+  return args.sort()
 }
 
-logAllArguments(4, 5, 6) /* ?*/
+logAllArguments(2, 4, 10, 56, 76, 12, 1, 55, 99) /*?*/
