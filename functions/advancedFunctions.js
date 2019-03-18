@@ -66,3 +66,17 @@ const numberMultiplier = (x, y = 2) => {
 }
 
 console.log(numberMultiplier(5, 10))
+
+const greet = () => {
+  if (greet.locale === 'fr') {
+    return `Bonjour`
+  } else if (greet.locale === 'es') {
+    return `Hola!`
+  } else {
+    return `Hello!!`
+  }
+}
+
+greet() /*?*/
+greet.locale = 'fr'
+console.log('greet:', greet) /*?*/
