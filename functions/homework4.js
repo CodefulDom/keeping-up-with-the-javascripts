@@ -6,4 +6,16 @@ Let's go back to your syllogism (logical argument) examples from Homework #3. No
 
 */
 
-// pass name param as default
+// what do you want to define as a mortal or not
+const mortality = (name, mortal, ...extra) => {
+  if (name && mortal === true && typeof name === 'string') {
+    return `Name: ${name}\nMortal??: ${mortal}\nExtra Params: ${extra}`
+  } else if (name && mortal === false) {
+    return `Name: ${name}\nMortal?: ${mortal}\nMortal Status: NOT mortal\n${extra}`
+  } else {
+    return `You are missing a name or mortality status. Try again! I also included this junk you gave that I did not ask for: ${extra}`
+  }
+}
+
+let isMortal = mortality('Dom', true, 'jjdjdjdjd') /* ? */
+console.log(isMortal)
