@@ -93,12 +93,15 @@ function purchaseItem(price, acct = bankAccount) {
     acct.balance -= price
     if (acct.balance <= 0) {
       acct.canSpendMoney = false
+      return `Declined. Your balance is: $${bankAccount.balance}.00`
     }
     return true
   } else {
-    return 'Declined'
+    ;`Declined. Your balance is: ${bankAccount.balance}.`
   }
 }
 
+console.log(purchaseItem(10))
+console.log(bankAccount)
 console.log(purchaseItem(101))
-console.log(purchaseItem(101))
+console.log(bankAccount)
