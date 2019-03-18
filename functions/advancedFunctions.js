@@ -112,3 +112,19 @@ function mappedMultiply(multiplier, ...nums) {
 
 const mappedResult = mappedMultiply(10, 5, 1, 3, 6)
 console.log(mappedResult)
+
+function Dog(years, breed) {
+  this.age = years
+  this.type = breed
+}
+
+const spike = new Dog(3, 'Golden Retevier')
+console.log(spike)
+
+const cat = () => {
+  this.name = 'felix'
+  console.log(this.name)
+  return this.name
+}
+
+console.log(cat())
