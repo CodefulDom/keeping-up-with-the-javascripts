@@ -82,3 +82,23 @@ const greet = () => {
     return `Hello!!`
   }
 }
+
+const bankAccount = {
+  canSpendMoney: true,
+  balance: 100
+}
+
+function purchaseItem(price, acct = bankAccount) {
+  if (acct.canSpendMoney) {
+    acct.balance -= price
+    if (acct.balance <= 0) {
+      acct.canSpendMoney = false
+    }
+    return true
+  } else {
+    return 'Declined'
+  }
+}
+
+console.log(purchaseItem(101))
+console.log(purchaseItem(101))
