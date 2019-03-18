@@ -61,11 +61,17 @@ const doubledNumbers = (num) => {
 
 console.log(doubledNumbers(numbers))
 
-const numberMultiplier = (x, y = 2) => {
+const numberMultiplier = (x = 2, y = 2) => {
   return x * y
 }
 
-console.log(numberMultiplier(5, 10))
+console.log(numberMultiplier())
+
+const stringSplitter = (str) => {
+  return str.split(' ')
+}
+
+console.log(stringSplitter('Hi Dominique'))
 
 const greet = () => {
   if (greet.locale === 'fr') {
@@ -76,7 +82,3 @@ const greet = () => {
     return `Hello!!`
   }
 }
-
-greet() /*?*/
-greet.locale = 'fr'
-console.log('greet:', greet) /*?*/
