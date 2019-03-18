@@ -91,7 +91,7 @@ const bankAccount = {
 function purchaseItem(price, acct = bankAccount) {
   if (acct.canSpendMoney) {
     acct.balance -= price
-    if (acct.balance <= 0) {
+    if (acct.balance <= 0 && bankAccount.canSpend != true) {
       acct.canSpendMoney = false
       return `Declined. Your balance is: $${bankAccount.balance}.00`
     }
@@ -105,3 +105,9 @@ console.log(purchaseItem(10))
 console.log(bankAccount)
 console.log(purchaseItem(101))
 console.log(bankAccount)
+
+function logAllArguments(x, y, z) {
+  return arguments
+}
+
+logAllArguments(4, 5, 6) /* ?*/
