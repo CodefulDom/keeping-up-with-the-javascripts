@@ -106,9 +106,9 @@ console.log(bankAccount)
 console.log(purchaseItem(101))
 console.log(bankAccount)
 
-function logAllArguments(x, y, z) {
-  const args = Array.prototype.slice.call(arguments, logAllArguments.length)
-  return args.sort()
+function mappedMultiply(multiplier, ...nums) {
+  return nums.map((n) => multiplier * n)
 }
 
-logAllArguments(2, 4, 10, 56, 76, 12, 1, 55, 99) /*?*/
+const mappedResult = mappedMultiply(10, 5, 1, 3, 6)
+console.log(mappedResult)
