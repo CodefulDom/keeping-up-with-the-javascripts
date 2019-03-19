@@ -1,0 +1,11 @@
+{
+  "name": "keeping-up-with-the-javascripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:CodefulDom/keeping-up-with-the-javascripts.git",
+  "author": "codefuldom <dominiquehallan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
